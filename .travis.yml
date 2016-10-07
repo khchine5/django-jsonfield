@@ -2,7 +2,6 @@ language: python
 sudo: false
 python:
   - "2.7"
-  - "3.2"
   - "3.3"
   - "3.4"
   - "3.5"
@@ -17,20 +16,14 @@ env:
   - DJANGO=master
 matrix:
   exclude:
-    - python: "3.2"
-      env: DJANGO=1.4
-    - python: "3.2"
-      env: DJANGO=1.8
-    - python: "3.2"
-      env: DJANGO=1.9
-    - python: "3.2"
-      env: DJANGO=master
     - python: "3.3"
       env: DJANGO=1.4
     - python: "3.3"
       env: DJANGO=1.8
     - python: "3.3"
       env: DJANGO=1.9
+    - python: "3.3"
+      env: DJANGO=1.10
     - python: "3.3"
       env: DJANGO=master
     - python: "3.4"
